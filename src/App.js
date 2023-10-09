@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ProductCard from "./components/Card";
 import axios from "axios";
 const App = () => {
-  const URL = "http://localhost:3000/coffe-shop";
+  const URL = "https://master--hilarious-rabanadas-0f9d2d.netlify.app/";
   const [product, setProduct] = useState([]);
   useEffect(() => {
     axios.get(URL).then((data) => setProduct(data.data));
